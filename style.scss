@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+$bgcolor: #fff;
+$textcolor: darkblue;
+$fontsize: 14px;
+$fontfamily: Lato, sans-serif;
+$bgcolor: #eee;
+$bgcolor1: #fda709;
+
+/* Use the variables */
+body {
+  padding: 20px 0;
+  color: $textcolor;
+  font-size: $fontsize;
+}
+
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-weight: 700;
+  margin-left: -10px;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $bgcolor;
+  background-clip: border-box;
+  border: 10px solid rgba(179, 177, 177, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 3.25rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ffad16;
+  border-color: #ffad16;
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: $bgcolor1;
+  border-color: $bgcolor1;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: $bgcolor1;
+  border-color: $bgcolor1;
+}
+
+.form-control {
+  text-transform: uppercase;
+}
+
+.col-md-6, .col-md-12, .col-md-4, .col-md-3 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  /* margin-bottom: 0px; */
+  margin-top: -8px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 177, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(255, 177, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: 5px;
+  bottom: 10px;
+  color: #2d2dcc;
+  left: 12px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.inputText {
+  font-size: 14px;
+  width: 200px;
+  height: 35px;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 16px;
+  transition: 0.2s ease all;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: -7px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  /* background-color: #fff; */
+  background-image: none;
+  /* border: 1px solid #ccc; */
+  border-radius: 2px;
+}
+
+.form-control:focus {
+  border-color: $bgcolor1;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 165, 0, 0.075), 0 0 8px rgba(254, 158, 59, 0.6);
+  box-shadow: inset 0 1px 1px rgba(255, 165, 0, 0.075), 0 0 8px rgba(254, 158, 59, 0.6);
+}
+
+.card {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
